@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #3bbadb;
+  --secondary-color: #008aaa;
+  --accent-color: #d1884f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0px 100px;
+  margin: 0;
+}
+
+nav {
+  color: var(--secondary-color);
+  padding: 10px;
+}
+
+nav ul {
+  margin-top: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: var(--accent-color);
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a i {
+  margin-right: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.left-section {
+  width: 60%;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+.left-section h1 {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.intro-paragraph {
+  margin-bottom: 40px;
+}
+
+.left-section p:first-child {
+  color: var(--secondary-color);
+}
+
+.header-yellow-text {
+  color: var(--accent-color);
+}
+
+.header-blue-text {
+  color: var(--secondary-color);
+}
+
+.intro-paragraph {
+  max-width: 500px;
+}
+
+.intro-paragraph p {
+  color: #333 !important;
+}
+
+.left-section p {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.blue-button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.white-button {
+  background-color: white;
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-color);
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-paragraph {
+    width: 180px;
+  }
+}
